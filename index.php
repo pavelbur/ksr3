@@ -1,22 +1,13 @@
-<a href ="/news">news</a>
 <?php
 error_reporting(E_ALL);
-define('NUMBER',5);
+define('STORAGE','src/storage.txt');// архив всех сообщений
+define('IN_PAGE',10);
 require 'autoload.php';
-
+$controller_name='News';
 $action_name=1;
-$routes = explode('/', $_SERVER['REQUEST_URI']);
 
-if ( !empty($routes[1]) ) {
-    $controller_name = $routes[1];
-}
-if ( !empty($routes[2]) ) {
-    $action_name = $routes[2];
+//var_dump($controller_name,$action_name);
 
-}
-
-
-
-$ctr= new Controller_News($controller_name,$action_name);
-$ctr->start();
+require_once'/controllers/Controller.php';
+$obj= new Controller();
 ?>
