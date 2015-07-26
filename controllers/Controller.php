@@ -5,7 +5,6 @@
      public $view;
      public $content;
      public $action;
-     public $mmm;
      function __construct(){
          $routes = explode('/', $_SERVER['REQUEST_URI']);
             if(!empty($routes[1])) {
@@ -15,8 +14,6 @@
                 $model = 'News';
                 $action=1;
             }
-            $this->mmm=$model;
-
 
          if(class_exists($model.'_Model')) {
              $this->model =  $model.'_Model';
