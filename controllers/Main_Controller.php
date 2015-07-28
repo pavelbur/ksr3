@@ -1,6 +1,6 @@
 <?php
 
- class Controller{
+ class Main_Controller{
      public $model;
      public $action;
      public $controller;

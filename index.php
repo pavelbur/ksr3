@@ -1,9 +1,8 @@
 <?php
 error_reporting(E_ALL);
-define('STORAGE','src/storage.txt');// архив всех сообщений
-define('IN_PAGE',10);
+define('IN_PAGE',5);
 require 'autoload.php';
 
 
-$obj= new Controller();
+$obj= new Main_Controller();
 
