@@ -9,14 +9,14 @@ class News_Controller extends Controller
 
     function run(){
         $this->view->pageHeader();
-        $this->content =  $this->model->getNews($this->action,IN_PAGE);//получает массив из IN_PAGE сообщений
-        $this->view->render($this->content);//выводит сообщения
-        $this->view->paginator($this->model->allMessage());//выводит пагинатор
-        //$this->view->renderAddMessage();//выводит форму для отпраки сообщений
+        $this->content =  $this->model->getNews($this->action,IN_PAGE);//РїРѕР»СѓС‡Р°РµС‚ РјР°СЃСЃРёРІ РёР· IN_PAGE СЃРѕРѕР±С‰РµРЅРёР№
+        $this->view->render($this->content);//РІС‹РІРѕРґРёС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
+        $this->view->paginator($this->model->allMessage());//РІС‹РІРѕРґРёС‚ РїР°РіРёРЅР°С‚РѕСЂ
+        //$this->view->renderAddMessage();//РІС‹РІРѕРґРёС‚ С„РѕСЂРјСѓ РґР»СЏ РѕС‚РїСЂР°РєРё СЃРѕРѕР±С‰РµРЅРёР№
         $this->view->pageFooter();
 
         if(!empty($_POST['message'])) {
-            $this->model->addMessage(STORAGE);// запись нового сообщения
+            $this->model->addMessage(STORAGE);// Р·Р°РїРёСЃСЊ РЅРѕРІРѕРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ
         }
     }
 }
