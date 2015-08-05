@@ -13,4 +13,7 @@ function __autoload($class)
     elseif (file_exists(__DIR__ . '/core/' . $class . '.php')) {
         require __DIR__ . '/core/' . $class . '.php';
     }
+    elseif (file_exists(__DIR__ . '/views/layout' . $class . '.php')) {
+        require __DIR__ . '/views/layout' . $class . '.php';
+    }
 }
