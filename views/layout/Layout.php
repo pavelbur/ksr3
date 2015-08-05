@@ -8,7 +8,7 @@ public function pageHeader(){
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
             <title>Tripod Blog Theme - Free CSS Templates</title>
-            <link href="/../views/templatemo_style.css" rel="stylesheet" type="text/css"/>
+            <link href="/../../views/css_pirobox/templatemo_style.css" rel="stylesheet" type="text/css"/>
         </head>
         <body>
 
@@ -17,7 +17,7 @@ public function pageHeader(){
 
                 <div id="site_title">
                     <h1><a href="index.html">
-                            <img src="/../views/images/templatemo_logo.png" alt="tripod blog"/></a>
+                            <img src="/../../views/images/templatemo_logo.png" alt="tripod blog"/></a>
                         <span>free blog template</span>
                     </h1>
                 </div>
@@ -105,14 +105,14 @@ public function pageHeader(){
         <div id="templatemo_sidebar_two">
 
             <div class="banner_250x200">
-                <a href="" target="_parent"><img src="images/250x200_banner.jpg" alt="templates"/></a>
+                <a href="" target="_parent"><img src="../images/250x200_banner.jpg" alt="templates"/></a>
             </div>
 
             <div class="banner_125x125">
-                <a href="" target="_parent"><img src="images/templatemo_ads.jpg" alt="web 1"/></a>
-                <a href="" target="_parent"><img src="images/templatemo_ads.jpg" alt="web 2"/></a>
-                <a href="" target="_parent"><img src="images/templatemo_ads.jpg" alt="templates 2"/></a>
-                <a href="" target="_parent"><img src="images/templatemo_ads.jpg" alt="templates 1"/></a>
+                <a href="" target="_parent"><img src="../images/templatemo_ads.jpg" alt="web 1"/></a>
+                <a href="" target="_parent"><img src="../images/templatemo_ads.jpg" alt="web 2"/></a>
+                <a href="" target="_parent"><img src="../images/templatemo_ads.jpg" alt="templates 2"/></a>
+                <a href="" target="_parent"><img src="../images/templatemo_ads.jpg" alt="templates 1"/></a>
             </div>
 
             <div class="cleaner_h40"></div>
